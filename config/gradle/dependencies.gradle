@@ -6,7 +6,7 @@ allprojects {
 
     ext {
         def Properties properties = new Properties()
-        properties.load(project.rootProject.file('local.properties').newDataInputStream())
+        properties.load(project.rootProject.file('gradle.properties').newDataInputStream())
 
         //Android
         androidBuildToolsVersion = "23.0.1"
