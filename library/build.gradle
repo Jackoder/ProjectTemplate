@@ -4,6 +4,17 @@ apply plugin: 'com.github.dcendents.android-maven'
 group = 'com.github.Jackoder'
 version = parent.version
 
+android {
+    buildTypes {
+        debug {
+            testCoverageEnabled true
+        }
+//        release {
+//            consumerProguardFiles 'proguard-rules.pro'
+//        }
+    }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 

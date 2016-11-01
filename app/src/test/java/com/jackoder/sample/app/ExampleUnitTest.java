@@ -1,4 +1,4 @@
-package com.jackoder.sample;
+package com.jackoder.sample.app;
 
 import org.junit.Test;
 

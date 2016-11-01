@@ -49,11 +49,14 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(":library")
 
     def libs = parent.ext.appLibs
     compile libs.supportV4
     compile libs.appcompat
     provided libs.supportAnnotation
 
-    compile project(":library")
+    def test = parent.ext.appTestLibs
+    testCompile test.junit
+    testCompile test.robolectric
 }
